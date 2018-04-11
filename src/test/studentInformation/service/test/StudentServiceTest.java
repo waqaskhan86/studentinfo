@@ -33,7 +33,7 @@ public class StudentServiceTest {
 	@Test
 	public void whenValidIdThenStudentShouldBeFound() throws Exception {
 		int id = 1;
-	    Student stuObject = new Student("ABC","DEF","GHI", new Date());
+	    Student stuObject = new Student("ABC","DEF","JKL", new Date());
 	    stuObject.setStudent_id(id);
 	    Mockito.when(studentRepositoryMock.findOne(Mockito.anyInt())).thenReturn(stuObject);
 	    stuObject = studentServiceImpl.findById(id);
