@@ -64,7 +64,7 @@ public class StudentRestControllerTest {
 	
 	@Test
 	public void shouldGetStudentById() throws Exception {
-		Student stuObject = new Student("ABC","DEF","MNO", new Date());
+		Student stuObject = new Student("ABC","DEF","GHI", new Date());
 		Mockito.when(studentServiceImpl.findById(Mockito.anyInt())).thenReturn(stuObject);
 		RequestBuilder requestBuilder = MockMvcRequestBuilders.get(BASE_URL+"/")
 				.param("id", "7")
